@@ -1,9 +1,7 @@
 # Question Answering System
 ## Introduction
 Question answering (QA) is a computer science discipline within the fields of information retrieval and natural language processing (NLP), which is concerned with building systems that automatically answer questions posed by humans in a natural language. Nowaday, QA system is needed in many business because it would reduce the workload of customer service staff as well as improve customer experience through fast and accurate answer given. Delightfully, the researchers could develop a QA system to the point that it archeived a super human performance with the help of pre-train model in nlp. However, people still doubt whether this system understand the complex and human like questions since the current datasets are too simple. 
-
 Therefor, I decided to challenge the current QA system to answer a human-like question and try to apply QA system to do the task on different domain. 
-The result
 
 # Our Approach/Methodology/Model
 I will train QA model with pre-train model **"BERT"**. Correspondingly, the input and output of model are defined as the following variable
@@ -36,9 +34,8 @@ The computation take around 25 minutes
 Dataset | Exactmatch | F1
 | --- | --- | ---
 thai_qa_squad  | 44.6 | 57
-QA Thai Wikipedia  | Content Cell | Content Cell
-QA Chulalongkorn University Rules  | Content Cell | Content Cell
+QA Thai Wikipedia  | | 
+QA Chulalongkorn University Rules  |  | 
 
 # Conclusion
-What task? What did we do?
-Summary of results.
+In summary this project create QA model and test on the challenge answer.
