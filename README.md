@@ -23,7 +23,7 @@ As a result, there are 2 test datasets
   
 
 # Experiment setup
-I used Wangchan-berta as a pre-train model and Question-Answer model
+I used wangchanberta as a pre-train model and create model pipeline for Question-Answer
 I tuning and set parameter as follow
 - learning_rate=2e-5,
 - batch_size = 16
@@ -34,8 +34,10 @@ The computation take around 25 minutes
 # Results
 ### Model	Accuracy
 Dataset | Exactmatch | F1
-Content Cell  | Content Cell | Content Cell
-Content Cell  | Content Cell | Content Cell
+| --- | --- | ---
+thai_qa_squad  | Content Cell | Content Cell
+QA Thai Wikipedia  | Content Cell | Content Cell
+QA Chulalongkorn University Rules  | Content Cell | Content Cell
 
 # Conclusion
 What task? What did we do?
