@@ -7,12 +7,11 @@ The result
 
 # Our Approach/Methodology/Model
 
-Explain your model here how it works.
-
-Input is ...
-Output is ...
-Model description
-Equation as necessary e.g. 
+Modeling
+An input sequence can be passed directly into the language model as is standardly done in Transfer Learning paradigm. For every token that enters the model, a contextualized word vector is returned. If you’re interested in understanding the finer details of this process, we highly recommend this illustrated blog post. If you’d simply like to play around with these models, FARM already has support for BERT, RoBERTa and XLNet (ALBERT coming soon).
+When concatenated together, the word vectors form a matrix of shape S x D where S is the max sequence length and D is the number of dimension is each word vector. This is passed through a feed-forward network enclosed in the prediction head which will generate two logit vectors of length S, one for start and one for end. Each position in the vectors corresponds to a token in the input sequence. High values in the start vector signals that the model has confidence that the corresponding token is the start of the answer span. The positions with high logit values (dark blue) will likely be chosen as the start and end of the answer span:
+Ano-answer prediction is represented by high logit values (dark blue) on the start and end vectors at index 0:
+The score for a given span is calculated by adding together the start and end logits, so long as they form a valid start-end pair. A start-end pair may be considered invalid if the end comes before the start, or if either start or end falls on an invalid token such as the padding.
 
 # Dataset
 In this project, I will use thaiqa_squad dataset to build a QA model. The thaiqa_squad is an open-domain, extractive question answering dataset (4,000 questions in train and 74 questions in dev) in SQuAD format, originally created by NECTEC from Wikipedia articles and adapted to SQuAD format by PyThaiNLP. For further experiment, I created others 2 dataset for model testing.
