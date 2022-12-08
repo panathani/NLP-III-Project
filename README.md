@@ -34,8 +34,8 @@ The computation take around 25 minutes
 Dataset | Exactmatch | F1
 | --- | --- | ---
 thai_qa_squad  | 44.6 | 57
-QA Thai Wikipedia  | | 
-QA Chulalongkorn University Rules  |  | 
+QA Thai Wikipedia  | 21.3 | 48
+QA Chulalongkorn University Rules  | 0 | 0
 
 # Conclusion
 In summary this project create QA model and test on the challenge answer.
