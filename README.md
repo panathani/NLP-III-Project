@@ -7,9 +7,10 @@ The result
 
 # Our Approach/Methodology/Model
 I will train QA model with pre-train model **"BERT"**. Correspondingly, the input and output of model are defined as the following variable
-Given: p = paragraph, q = question
-Input = [CLS] q1, q2, q3,... [SEP] p1, p2, p3...
-Output = Start & End position of the answers
+
+- Given: p = paragraph, q = question
+- Input = [CLS] q1, q2, q3,... [SEP] p1, p2, p3...
+- Output = Start & End position of the answers
 
 
 # Dataset
