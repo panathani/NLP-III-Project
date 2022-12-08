@@ -23,18 +23,19 @@ As a result, there are 2 test datasets
   
 
 # Experiment setup
-I used Wangchan-berta as a pre-train model and use 
-Which pre-trained model? How did you pretrain embeddings?
-Computer. How long?
-Hyperparameter tuning? Dropout? How many epochs?
+I used Wangchan-berta as a pre-train model and Question-Answer model
+I tuning and set parameter as follow
+- learning_rate=2e-5,
+- batch_size = 16
+- epoch = 1
+- weight_decay=0.01,
+The computation take around 25 minutes
 
 # Results
-How did it go? + Interpret results.
-
-Model comparison
-Model	Accuracy
-Logistic regression	67%
-BERT	75%
+### Model	Accuracy
+Dataset | Exactmatch | F1
+Content Cell  | Content Cell | Content Cell
+Content Cell  | Content Cell | Content Cell
 
 # Conclusion
 What task? What did we do?
