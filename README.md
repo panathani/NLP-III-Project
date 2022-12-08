@@ -20,7 +20,7 @@ In this project, I will use thaiqa_squad dataset to build a QA model. The thaiqa
 I created a test dataset based on Thai Wikipedia and Chulalongkorn University Rules. The topics were choosen randomly and selected interesting paragrahp. For each selected paragraph, I defined question and answer 1-2 questions on the content of the paragraph. I used Haystack Annotation Tool which provided a text field to type their question, and it could highlight the answers in the paragraph as well as export the data in SQUAD format. Each answer was partitioned into one of the following categories: “date”, “other numeric”, “person”, “location”, “other entity”, “common noun phrase”, “adjective phrase”, “verb phrase”, “clause”, and “other”.
 As a result, there are 2 test datasets
   1. QA Thai Wikipedia : Total 50 
-  2. QA Chulalongkorn University Rules : Total 50 
+  2. QA Chulalongkorn University Rules : Total 20 
   
 
 # Experiment setup
