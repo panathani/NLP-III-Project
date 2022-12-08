@@ -35,7 +35,7 @@ The computation take around 25 minutes
 ### Model	Accuracy
 Dataset | Exactmatch | F1
 | --- | --- | ---
-thai_qa_squad  | Content Cell | Content Cell
+thai_qa_squad  | 44.6 | 57
 QA Thai Wikipedia  | Content Cell | Content Cell
 QA Chulalongkorn University Rules  | Content Cell | Content Cell
 
